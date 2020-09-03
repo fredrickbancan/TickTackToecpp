@@ -91,10 +91,10 @@ void Game::chosePlayerTurn()
 		else
 		{
 			//If atleast one game has been played, the other player gets to have the first turn.
-			currentPlayerTurn == PlayerTurn::PLAYERONE ? PlayerTurn::PLAYERTWO : PlayerTurn::PLAYERONE;
+			currentPlayerTurn = currentPlayerTurn == PlayerTurn::PLAYERONE ? PlayerTurn::PLAYERTWO : PlayerTurn::PLAYERONE;
 		}
 	}
-	else
+	else 
 	{
 		//If it is not a new game, just chose the other player as the next turn.
 		currentPlayerTurn = currentPlayerTurn == PlayerTurn::PLAYERONE ? PlayerTurn::PLAYERTWO : PlayerTurn::PLAYERONE;
