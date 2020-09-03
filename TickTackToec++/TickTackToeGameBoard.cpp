@@ -3,7 +3,7 @@
 
 TickTackToeGameBoard::TickTackToeGameBoard()
 {
-	symbols = new char* [3];//each char array in the array is a row
+	symbols = new char* [3];//each char array in the pointer array is a row
 	for (int i = 0; i < 3; i++)//rows
 	{
 		symbols[i] = new char[4];//plus 1 for null terminator
